@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <!-- Method post: mais seguro. Não mostra a senha.
+     autocomplete: Ao digita o navegador sugerir nomes de usarios que ja foram digitados.
+     required minlength: caracteres mínimos.
+     maxlenght: maximo de caracteres.
+     placeholder: mostra um exemplo
+     autocomplete="username": o navegador pode sugerir nomes de usuário que já foram usados antes.
+     autocomplete= "currente-passaword: senha q ja existi
+     autocomplete= "new-password": nova senha"
+     FACILITA O NAVEGADOR A ENTENDER O QUE É CADA CAIXA.-->
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="iusi">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5"
+        maxlength="35" size="30" placeholder="Ex.: João" autocomplete="username">
+    </p>
+    <p>
+        <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="30" placeholder="mínimo 8 caracteres" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
